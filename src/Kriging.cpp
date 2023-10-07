@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: LGPL-2.0-or-later
-// Copyright © EDF R&D / TELECOM ParisTech (ENST-TSI)
+// Copyright Â© EDF R&D / TELECOM ParisTech (ENST-TSI)
 
 #include "../include/Kriging.h"
 
@@ -355,7 +355,7 @@ struct OrdinaryKrigeContext
 
 		nanoflann::KNNResultSet<double> resultSet(knn);
 		resultSet.init(kdIndexes.data(), kdDistances.data());
-		nanoflann::SearchParams searchParams;
+		nanoflann::SearchParameters searchParams;
 		searchParams.sorted = false;
 		if (false == kdTree->findNeighbors(resultSet, query.u, searchParams))
 		{
